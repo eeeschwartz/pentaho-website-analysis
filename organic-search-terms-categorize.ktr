@@ -147,9 +147,15 @@
     <optimizationLevel>9</optimizationLevel>
     <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
         <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;category &#x3d; &#x27;&#x27;&#xd;&#xa;&#xd;&#xa;if &#x28;keyword.match&#x28;&#x2f;police&#x2f;&#x29;&#x29; &#x7b;&#xd;&#xa;	category &#x3d; &#x27;police&#x27;&#x3b;&#xd;&#xa;&#x7d; &#xd;&#xa;else if &#x28;keyword.match&#x28;&#x2f;park&#x2f;&#x29;&#x29; &#x7b;&#xd;&#xa;	category &#x3d; &#x27;parks&#x27;&#x3b;&#xd;&#xa;&#x7d; else if &#x28;keyword.match&#x28;&#x2f;lex &#x3f;serv&#x2f;&#x29;&#x29; &#x7b;&#xd;&#xa;	category &#x3d; &#x27;lexserv&#x27;&#x3b;&#xd;&#xa;&#x7d; &#xd;&#xa;&#x2f;&#x2a;&#xd;&#xa;else if &#x28;keyword.match&#x28;&#x2f;&#x2f;&#x29;&#x29; &#x7b;&#xd;&#xa;	category &#x3d; &#x27;&#x27;&#x3b;&#xd;&#xa;&#x7d; else if &#x28;keyword.match&#x28;&#x2f;&#x2f;&#x29;&#x29; &#x7b;&#xd;&#xa;	category &#x3d; &#x27;&#x27;&#x3b;&#xd;&#xa;&#x7d; else if &#x28;keyword.match&#x28;&#x2f;&#x2f;&#x29;&#x29; &#x7b;&#xd;&#xa;	category &#x3d; &#x27;&#x27;&#x3b;&#xd;&#xa;&#x7d; else if &#x28;keyword.match&#x28;&#x2f;&#x2f;&#x29;&#x29; &#x7b;&#xd;&#xa;	category &#x3d; &#x27;&#x27;&#x3b;&#xd;&#xa;&#x7d; else if &#x28;keyword.match&#x28;&#x2f;&#x2f;&#x29;&#x29; &#x7b;&#xd;&#xa;	category &#x3d; &#x27;&#x27;&#x3b;&#xd;&#xa;&#x7d; else if &#x28;keyword.match&#x28;&#x2f;&#x2f;&#x29;&#x29; &#x7b;&#xd;&#xa;	category &#x3d; &#x27;&#x27;&#x3b;&#xd;&#xa;&#x7d; else if &#x28;keyword.match&#x28;&#x2f;&#x2f;&#x29;&#x29; &#x7b;&#xd;&#xa;	category &#x3d; &#x27;&#x27;&#x3b;&#xd;&#xa;&#x7d; else if &#x28;keyword.match&#x28;&#x2f;&#x2f;&#x29;&#x29; &#x7b;&#xd;&#xa;	category &#x3d; &#x27;&#x27;&#x3b;&#xd;&#xa;&#x7d; else if &#x28;keyword.match&#x28;&#x2f;&#x2f;&#x29;&#x29; &#x7b;&#xd;&#xa;	category &#x3d; &#x27;&#x27;&#x3b;&#xd;&#xa;&#x7d; else if &#x28;keyword.match&#x28;&#x2f;&#x2f;&#x29;&#x29; &#x7b;&#xd;&#xa;	category &#x3d; &#x27;&#x27;&#x3b;&#xd;&#xa;&#x7d; else if &#x28;keyword.match&#x28;&#x2f;&#x2f;&#x29;&#x29; &#x7b;&#xd;&#xa;	category &#x3d; &#x27;&#x27;&#x3b;&#xd;&#xa;&#x7d; else if &#x28;keyword.match&#x28;&#x2f;&#x2f;&#x29;&#x29; &#x7b;&#xd;&#xa;	category &#x3d; &#x27;&#x27;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#x2a;&#x2f;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;</jsScript_script>
+        <jsScript_script>category &#x3d; &#x27;&#x27;&#x3b;&#xd;&#xa;match &#x3d; &#x27;&#x27;&#x3b;&#xd;&#xa;&#xd;&#xa;regexes &#x3d; &#x7b;&#xd;&#xa;  &#x27;police&#x27;&#x3a; &#x2f;police&#x7c;crime&#x7c;&#x5c;bpd&#x5c;b&#x2f;,&#xd;&#xa;  &#x27;parks&#x27;&#x3a; &#x2f;park&#x7c;pool&#x7c;fair&#x7c;flick&#x7c;golf&#x7c;woodland&#x7c;moondance&#x7c;k&#x3f;c&#x3f;app&#x3f;ers&#x7c;raven&#x7c;&#x5c;besp&#x5c;b&#x7c;ballet&#x7c;bluegrass 10&#x7c;bell house&#x7c;kearney&#x7c;trail&#x7c;springs&#x7c;aquatic&#x2f;,&#xd;&#xa;  &#x27;lexserv&#x27;&#x3a; &#x2f;lex &#x3f;serv&#x2f;,&#xd;&#xa;  &#x27;court&#x27;&#x3a; &#x2f;court&#x2f;,&#xd;&#xa;  &#x27;jail&#x27;&#x3a; &#x2f;jail&#x7c;inmate&#x7c;detention&#x2f;,&#xd;&#xa;  &#x27;trash&#x27;&#x3a; &#x2f;waste&#x7c;trash&#x7c;recycl&#x2f;,&#xd;&#xa;  &#x27;jobs&#x27;&#x3a; &#x2f;job&#x2f;,&#xd;&#xa;  &#x27;fire&#x27;&#x3a; &#x2f;fire&#x2f;,&#xd;&#xa;  &#x27;traffic&#x27;&#x3a; &#x2f;traffic&#x7c;valley view&#x7c;ferry&#x2f;,&#xd;&#xa;  &#x27;pva&#x27;&#x3a; &#x2f;&#x5c;bpva&#x5c;b&#x2f;,&#xd;&#xa;  &#x27;lexcall&#x27;&#x3a; &#x2f;lex &#x3f;call&#x7c;&#x5c;b311&#x5c;b&#x2f;,&#xd;&#xa;  &#x27;animal control&#x27;&#x3a; &#x2f;animal&#x2f;,&#xd;&#xa;  &#x27;clerk&#x27;&#x3a; &#x2f;clerk&#x2f;,&#xd;&#xa;  &#x27;social services&#x27;&#x3a; &#x2f;services&#x2f;,&#xd;&#xa;  &#x27;tax&#x27;&#x3a; &#x2f;tax&#x2f;,&#xd;&#xa;  &#x27;leaf collection&#x27;&#x3a; &#x2f;leaf&#x2f;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;categories &#x3d; Object.keys&#x28;regexes&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;for &#x28;var i &#x3d; 0&#x3b; i &#x3c; categories.length&#x3b; i&#x2b;&#x2b;&#x29; &#x7b;&#xd;&#xa;  potentialCategory &#x3d; categories&#x5b;i&#x5d;&#x3b;&#xd;&#xa;  regex &#x3d; regexes&#x5b;potentialCategory&#x5d;&#x3b;&#xd;&#xa;  matches &#x3d; &#x5b;&#x5d;&#x3b;&#xd;&#xa;  if &#x28;matches &#x3d; keyword.match&#x28;regex&#x29;&#x29; &#x7b;&#xd;&#xa;    match &#x3d; matches&#x5b;0&#x5d;&#x3b;&#xd;&#xa;    category &#x3d; potentialCategory&#x3b;&#xd;&#xa;  &#x7d;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f; catchall for lexington ky, lfucg, lexington government, etc&#xd;&#xa;if &#x28;category &#x3d;&#x3d; &#x27;&#x27; &#x26;&#x26; organicSearches &#x3e; 50&#x29; &#x7b;&#xd;&#xa;	category &#x3d; &#x27;city&#x27;&#xd;&#xa;&#x7d;&#xd;&#xa;</jsScript_script>
       </jsScript>    </jsScripts>    <fields>      <field>        <name>category</name>
         <rename>category</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>match</name>
+        <rename>match</rename>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -173,7 +179,7 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <separator>&#x3b;</separator>
+    <separator>,</separator>
     <enclosure>&#x22;</enclosure>
     <enclosure_forced>N</enclosure_forced>
     <enclosure_fix_disabled>N</enclosure_fix_disabled>
@@ -231,6 +237,18 @@
       </field>
       <field>
         <name>category</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>match</name>
         <type>String</type>
         <format/>
         <currency/>
